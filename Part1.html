@@ -1,46 +1,47 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-<meta content="text/html; charset=Windows-1251" http-equiv="content-type"><title>Part1</title></head><body><big style="font-weight: bold;"><big><big>HOW-TO: ��������� �� Python, ����� 1</big></big></big><br>
-<br>
-<ul>
-  <li><big>&nbsp;<span style="font-style: italic;">��������� �� Python  - часть 1
-    </span></big></li>
-  <li><big><span style="font-style: italic;">&nbsp;��������� �� Python - часть 2
-    </span></big></li>
-  <li><span style="font-style: italic;"><big>&nbsp;��������� �� Python - часть 3</big>
-    </span></li>
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <title>Part1</title>
+  </head>
+<body>
+  <blockquote>
+  <h2>HOW-TO: Программа на Python, Часть 1</h2>
+  <br>
+  <ul>
+  <li><i><big>Программа на Python — часть 1</big></i></li>
+  <li><i><big>Программа на Python — часть 2</big></i></li>
+  <li><i><big>Программа на Python — часть 3</big></i></li>
 </ul>
-<big><big><br style="font-weight: bold;">
-<span style="font-weight: bold;"><big>����������
-</big><br>
 <br>
-<span style="font-weight: bold;">HOW-TO:&nbsp; </span></span><span style="font-weight: bold;">��������� �� Python, ����� 1
-</span></big></big><br>
+<h3>СОДЕРЖАНИЕ</h3>
 <br>
-<ol style="text-decoration: underline; font-weight: bold;">
-  <li><big><big><big><big>���� ������ ���������
-    </big></big></big></big></li>
-  <li><big><big><big><big>������ ����� For</big>
-    </big></big></big></li>
+<h3>HOW-TO: Программа на Python, Часть 1</h3>
+<br>
+<ol>
+  <li><ins><big><big>Наша первая программа</big></big></ins></li>
+  <li><ins><big><big>Пример цикла For</big></big></ins></li>
 </ol>
 <br>
 <br>
-<big><big>�� ��������� ������������ ������ ���������������� Python � ���� �� ����� ����� 
-� ��������. �� ������ � ����� 80-� ����� XX ����, �� � ��� ��� �� ������ ���������. 
-���� Python ������ � ������ ����������� ������������� Linux, �� ���� ����� �� 
-�������� �������� ��� ������ ����� ��� ��������. � ���� ������ �� ���������� 
-�������� ���������� ����������, � � ��������� � ���������������� ����������� 
-����������� (GUI). ������� �������� ������� ��������� ����� ������.
+<big><big>
+  <p>Из множества существующих языков программирования Python — один из самых лёгких 
+  в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился. 
+  Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не 
+  обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим 
+  создание консольных приложений, а в следующей — программирование графических 
+  интерфейсов (GUI). Давайте создадим простую программу прямо сейчас.</p>
 <br>
 <br>
-<big style="font-weight: bold;">���� ������ ���������
-</big><br>
-<br>
-������ ��� � ��������� ��������� (��������, <span style="font-weight: bold;">� gedit</span>). ����� �� ���������, ��� ������ 
-������ ������ � ����� ������.
+<big style="font-weight: bold;">Наша первая программа</big>
 <br>
 <br>
-������� ��� 4 ������:
+<p>Наберём код в текстовом редакторе (например, в gedit). Потом мы разберёмся, что делает 
+каждая строка и пойдём дальше.</p>
+
+<br>
+<br>
+Введите эти 4 строки:
 <br>
 <br>
 <small>#!/usr/bin/env python
@@ -52,16 +53,16 @@ name = raw_input("What is your name?")
 print "Hello there, " + name + "!"
 </small><br>
 <br>
-��� ��. ��������� ���� ��� <span style="font-weight: bold;">hello.py</span> � ����� �����. � ��������� ��������� ��� � ����� 
-<span style="font-weight: bold;">python_examples</span> � �������� ��������. ���� ������ ����������, ��� ������ �������� 
-��������� �� Python. ��� ������� ��������� ����� ������� � ���� �����������. ��� 
-����� ������� � ���������
+Это всё. Сохраните файл как hello.py в любом месте. Я предлагаю сохранить его в папке 
+python_examples в домашнем каталоге. Этот пример показывает, как просто написать 
+программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для 
+этого введите в терминале
 <br>
 <br>
 <span style="text-decoration: underline; font-weight: bold; font-style: italic;">chmod +x hello.py</span><span style="font-weight: bold; font-style: italic;">
 </span><br>
 <br>
-� �����, � ������� �� ��������� ���������. ������ ��������� �.
+в папке, в которой вы сохранили программу. Теперь запустите её.
 <br>
 <br>
 <small>greg@earth:~/python_examples$ ./hello.py
@@ -74,13 +75,13 @@ Hello there, Ferd Burphel!
 greg@earth:~/python_examples$
 </small><br>
 <br>
-��� � ��. 
+Вот и все. 
 <br>
 <br>
-<big style="font-weight: bold;">������ ����� For</big><br>
+<big style="font-weight: bold;">Пример цикла For</big><br>
 <br>
-������ ������� ���������� ������ ���������������� �����. ��������� ��������� 
-�������� � �������� ��������� ���������:
+Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый 
+редактор и наберите следующую программу::
 <br>
 <br>
 <small>#!/usr/bin/env python
@@ -90,9 +91,9 @@ for cntr in range(0,10):
 print cntr
 </small><br>
 <br>
-�� �������� ��������� ������ ��������� ����� ������� �print cntr�. ��� �����. � 
-Python ��� �������� �� ����� ���� ������������ �� ������� �(� � �������� �{� ������ 
-��� � ������ ������ ����������������, � �������.</big></big>
-  
+<p>Не забудьте поставить символ табуляции перед строкой «print cntr». Это важно. В 
+Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки 
+как в других языках программирования, а отступы</p></big></big>
 
+</blockquote>  
 </body></html>
